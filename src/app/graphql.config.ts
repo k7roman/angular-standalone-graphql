@@ -1,0 +1,1 @@
+export const myUrl = 'https://countries.trevorblades.com/graphql';
