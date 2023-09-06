@@ -1,1 +1,18 @@
-<p>view works!</p>
+<section>
+    <section>
+        <ul style="list-style-type: none;">
+            <li>
+                <a routerLink="">To Home</a>
+            </li>
+        </ul>
+    </section>
+    <div *ngIf="loading else showData">
+      loading data
+    </div>
+    <ng-template #showData>
+        <h4 class="center">Countries</h4>  
+        <div *ngFor="let country of countries">
+            <p>{{ country.name }}</p>
+        </div>
+    </ng-template>
+</section>
